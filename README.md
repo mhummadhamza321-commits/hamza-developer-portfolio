@@ -32,13 +32,13 @@ A responsive personal portfolio built with semantic HTML5, CSS3, and vanilla Jav
 
 ## Personalization checklist
 
-- [ ] Verify the GitHub and LinkedIn URLs.
-- [ ] Add `assets/Muhammad-Hamza-CV.pdf` (your current CV).
-- [ ] Confirm that the Mobile Bio Lab repository is public and the link is correct.
-- [ ] Add the ZaikaGo repository link after it is public.
-- [ ] Update project descriptions to reflect only implemented features.
-- [ ] Test all links and layouts on mobile and desktop.
-- [ ] Add screenshots of the deployed website to this README.
+- [☑] Verify the GitHub and LinkedIn URLs.
+- [☑] Add `assets/Muhammad-Hamza-CV.pdf` (your current CV).
+- [☑] Confirm that the Mobile Bio Lab repository is public and the link is correct.
+- [☑] Add the ZaikaGo repository link after it is public.
+- [☑] Update project descriptions to reflect only implemented features.
+- [☑] Test all links and layouts on mobile and desktop.
+- [☑] Add screenshots of the deployed website to this README.
 
 ## Deployment on Vercel
 
