@@ -1,48 +1,88 @@
 <!doctype html>
 <html lang="en" data-theme="dark">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Muhammad Hamza — Junior Full-Stack Developer portfolio, projects, skills, and contact details.">
+  <meta name="description"
+    content="Muhammad Hamza — Junior Full-Stack Developer portfolio, projects, skills, and contact details.">
   <meta name="theme-color" content="#0b1220">
+  <meta name="color-scheme" content="dark light">
+
   <title>Muhammad Hamza | Developer Portfolio</title>
+
+  <link rel="preconnect" href="https://github.com">
   <link rel="stylesheet" href="style.css">
   <script src="script.js" defer></script>
 </head>
+
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
+
   <header class="site-header">
     <nav class="nav container" aria-label="Main navigation">
-      <a class="brand" href="#home" aria-label="Muhammad Hamza home"><span class="brand-mark">H</span><span>Hamza<span class="accent">.</span></span></a>
-      <button class="menu-toggle" id="menu-toggle" aria-label="Open navigation menu" aria-expanded="false" aria-controls="nav-links"><span></span><span></span><span></span></button>
+      <a class="brand" href="#home" aria-label="Muhammad Hamza — home">
+        <span class="brand-mark" aria-hidden="true">MH</span>
+        <span>Muhammad Hamza</span>
+      </a>
+
+      <button class="menu-toggle" id="menu-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false"
+        aria-controls="nav-links">
+        <span></span><span></span><span></span>
+      </button>
+
       <div class="nav-links" id="nav-links">
-        <a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#contact">Contact</a>
-        <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Switch color theme">☼ <span>Theme</span></button>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+        <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Switch color theme">
+          <span aria-hidden="true">☼</span>
+          <span>Theme</span>
+        </button>
       </div>
     </nav>
   </header>
 
   <main id="main">
+
+    <!-- HERO -->
     <section class="hero section container" id="home">
       <div class="hero-copy">
-        <p class="eyebrow"><span class="status-dot"></span> OPEN TO JUNIOR DEVELOPER OPPORTUNITIES</p>
+        <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> OPEN TO JUNIOR DEVELOPER OPPORTUNITIES
+        </p>
         <h1>Hi, I'm <span class="gradient-text">Muhammad Hamza</span>.</h1>
         <h2>Junior Full-Stack Developer</h2>
-        <p class="hero-description">I build responsive web experiences and practical applications using JavaScript and modern web technologies. I enjoy turning ideas into useful, user-friendly products.</p>
+        <p class="hero-description">
+          I build responsive web experiences and practical applications using JavaScript and
+          modern web technologies. I enjoy turning ideas into useful, user-friendly products.
+        </p>
+
         <div class="hero-actions">
           <a class="button button-primary" href="#projects">Explore my work <span aria-hidden="true">↗</span></a>
           <a class="button button-secondary" href="#contact">Get in touch</a>
         </div>
-        <div class="social-links" aria-label="Social links">
-          <a href="https://github.com/mhummadhamza321-commits" target="_blank" rel="noreferrer">GitHub ↗</a>
-          <a href="https://www.linkedin.com/in/muhmmad-hamza-094639335" target="_blank" rel="noreferrer">LinkedIn ↗</a>
+
+        <nav class="social-links" aria-label="Social links">
+          <a href="https://github.com/mhummadhamza321-commits" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+          <a href="https://www.linkedin.com/in/muhmmad-hamza-094639335" target="_blank"
+            rel="noopener noreferrer">LinkedIn ↗</a>
           <a href="mailto:mhummadhamza321@gmail.com">Email ↗</a>
-        </div>
+        </nav>
       </div>
-      <div class="hero-visual" aria-label="Decorative code illustration">
-        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+
+      <div class="hero-visual">
+        <img src="assets/profile.jpg" alt="Portrait of Muhammad Hamza, Junior Full-Stack Developer"
+          class="profile-picture" fetchpriority="high" decoding="async" width="148" height="148" />
+
+        <div class="orbit orbit-one" aria-hidden="true"></div>
+        <div class="orbit orbit-two" aria-hidden="true"></div>
+
         <div class="code-card">
-          <div class="code-card-top"><span></span><span></span><span></span><small>developer.js</small></div>
+          <div class="code-card-top">
+            <span aria-hidden="true"></span><span aria-hidden="true"></span><span aria-hidden="true"></span>
+            <small>developer.js</small>
+          </div>
           <pre><code><span class="code-purple">const</span> developer = {
   name: <span class="code-green">"Hamza"</span>,
   focus: <span class="code-green">"Full-Stack"</span>,
@@ -53,18 +93,27 @@
   ],
   learning: <span class="code-green">"Every day"</span>
 };</code></pre>
-          <div class="code-card-footer"><span class="status-dot"></span> Building useful things</div>
+          <div class="code-card-footer">
+            <span class="status-dot" aria-hidden="true"></span> Building useful things
+          </div>
         </div>
-        <div class="floating-chip chip-top">{"</>"} JavaScript</div>
-        <div class="floating-chip chip-bottom">✦ Always learning</div>
+
+        <div class="floating-chip chip-top" aria-hidden="true">{ JS } JavaScript</div>
+        <div class="floating-chip chip-bottom" aria-hidden="true">✦ Always learning</div>
       </div>
     </section>
 
+    <!-- ABOUT -->
     <section class="section section-muted" id="about">
       <div class="container narrow">
         <p class="eyebrow">A LITTLE ABOUT ME</p>
         <h2 class="section-title">Curious mind. <span class="gradient-text">Practical builder.</span></h2>
-        <p class="section-lead">I'm a BSIT graduate focused on full-stack web development. I strengthen my skills by building projects, learning from real implementation challenges, and improving the details that make applications reliable and easy to use.</p>
+        <p class="section-lead">
+          I'm a BSIT graduate focused on full-stack web development. I strengthen my skills by
+          building projects, learning from real implementation challenges, and improving the
+          details that make applications reliable and easy to use.
+        </p>
+
         <div class="about-facts">
           <div><strong>BSIT</strong><span>Virtual University of Pakistan</span></div>
           <div><strong>MERN</strong><span>Current development focus</span></div>
@@ -73,56 +122,315 @@
       </div>
     </section>
 
+    <!-- SKILLS -->
     <section class="section container" id="skills">
       <p class="eyebrow">MY TOOLKIT</p>
-      <h2 class="section-title">Skills & technologies</h2>
+      <h2 class="section-title">Skills &amp; technologies</h2>
       <p class="section-subtitle">Technologies I've studied and use across my projects.</p>
+
       <div class="skills-grid">
-        <article class="skill-card"><div class="skill-icon">⌘</div><h3>Frontend</h3><p>HTML5 · CSS3 · JavaScript ES6+ · React.js · Next.js · Tailwind CSS · Bootstrap</p></article>
-        <article class="skill-card"><div class="skill-icon">⚙</div><h3>Backend</h3><p>Node.js · Express.js · REST APIs · JWT authentication</p></article>
-        <article class="skill-card"><div class="skill-icon">▤</div><h3>Databases</h3><p>MongoDB · MySQL · PostgreSQL</p></article>
-        <article class="skill-card"><div class="skill-icon">⌁</div><h3>Tools & workflow</h3><p>Git · GitHub · VS Code · Responsive design · Debugging</p></article>
+        <article class="skill-card">
+          <div class="skill-icon" aria-hidden="true">⌘</div>
+          <h3>Frontend</h3>
+          <p>HTML5 · CSS3 · JavaScript ES6+ · React.js · Next.js · Tailwind CSS · Bootstrap</p>
+        </article>
+        <article class="skill-card">
+          <div class="skill-icon" aria-hidden="true">⚙</div>
+          <h3>Backend</h3>
+          <p>Node.js · Express.js · REST APIs · JWT authentication</p>
+        </article>
+        <article class="skill-card">
+          <div class="skill-icon" aria-hidden="true">▤</div>
+          <h3>Databases</h3>
+          <p>MongoDB · MySQL · PostgreSQL</p>
+        </article>
+        <article class="skill-card">
+          <div class="skill-icon" aria-hidden="true">⌁</div>
+          <h3>Tools &amp; workflow</h3>
+          <p>Git · GitHub · VS Code · Responsive design · Debugging</p>
+        </article>
       </div>
     </section>
 
+    <!-- PROJECTS -->
     <section class="section section-muted" id="projects">
       <div class="container">
         <p class="eyebrow">SELECTED WORK</p>
         <h2 class="section-title">Projects I'm building</h2>
-        <p class="section-subtitle">A selection of academic and hands-on projects. Project status is shown transparently.</p>
+        <p class="section-subtitle">
+          A selection of academic and hands-on projects. Project status is shown transparently.
+        </p>
+
         <div class="project-grid">
           <article class="project-card">
-            <div class="project-art lab-art"><span class="art-symbol">＋</span><span class="art-label">MOBILE BIO LAB</span><div class="art-lines"></div></div>
-            <div class="project-content"><div class="project-meta"><span class="project-type">Final-year project</span><span class="project-status">Academic</span></div><h3>Mobile Bio Lab</h3><p>A web application concept for mobile laboratory services, supporting lab workflows and sample-related information.</p><div class="tag-list"><span>Web App</span><span>JavaScript</span><span>Database</span></div><a class="project-link" href="https://github.com/mhummadhamza321-commits/mobile-bio-lab" target="_blank" rel="noreferrer">View source repository ↗</a></div>
+            <img src="assets/mobile-bio-lab.png" alt="Mobile Bio Lab application preview" class="project-image"
+              loading="lazy" decoding="async" width="640" height="360" />
+            <div class="project-content">
+              <div class="project-meta">
+                <span class="project-type">Final-year project</span>
+                <span class="project-status">Academic</span>
+              </div>
+              <h3>Mobile Bio Lab</h3>
+              <p>
+                A web application concept for mobile laboratory services, supporting lab
+                workflows and sample-related information.
+              </p>
+              <div class="tag-list">
+                <span>React.js</span><span>JavaScript</span><span>Node.js</span><span>Express.js</span><span>MySQL</span>
+              </div>
+              <a class="project-link" href="https://github.com/mhummadhamza321-commits/mobile-bio-lab" target="_blank"
+                rel="noopener noreferrer">View source repository ↗</a>
+            </div>
           </article>
+
           <article class="project-card">
-            <div class="project-art food-art"><span class="food-emoji">🍲</span><span class="art-label">ZAIKAGO</span><div class="food-ring"></div></div>
-            <div class="project-content"><div class="project-meta"><span class="project-type">MERN application</span><span class="project-status status-progress">In progress</span></div><h3>ZaikaGo — Food Delivery</h3><p>A food delivery application in development, with authentication and planned food browsing, cart, orders, and admin workflows.</p><div class="tag-list"><span>MongoDB</span><span>Express</span><span>React</span><span>Node.js</span></div><span class="project-link project-link-muted">Repository link will be added when public</span></div>
+            <img src="assets/zaikago.png" alt="ZaikaGo food delivery application preview" class="project-image"
+              loading="lazy" decoding="async" width="640" height="360" />
+            <div class="project-content">
+              <div class="project-meta">
+                <span class="project-type">MERN application</span>
+                <span class="project-status status-progress">In progress</span>
+              </div>
+              <h3>ZaikaGo — Food Delivery</h3>
+              <p>
+                A food delivery application in development, with authentication and planned
+                food browsing, cart, orders, and admin workflows.
+              </p>
+              <div class="tag-list">
+                <span>MongoDB</span><span>Express</span><span>React.js</span><span>Node.js</span>
+              </div>
+              <span class="project-link project-link-muted">Repository link will be added when public</span>
+            </div>
           </article>
+
           <article class="project-card">
-            <div class="project-art employee-art"><span class="dashboard-icon">▦</span><span class="art-label">EMPLOYEE SYSTEM</span><div class="mini-bars"><i></i><i></i><i></i><i></i></div></div>
-            <div class="project-content"><div class="project-meta"><span class="project-type">Practice project</span><span class="project-status">Fundamentals</span></div><h3>Employee Management System</h3><p>A small application demonstrating employee record management and browser-based data persistence.</p><div class="tag-list"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>localStorage</span></div><a class="project-link" href="https://github.com/mhummadhamza321-commits" target="_blank" rel="noreferrer">Explore GitHub profile ↗</a></div>
+            <img src="assets/employee-management.png" alt="Employee Management System application preview"
+              class="project-image" loading="lazy" decoding="async" width="640" height="360" />
+            <div class="project-content">
+              <div class="project-meta">
+                <span class="project-type">Practice project</span>
+                <span class="project-status">Fundamentals</span>
+              </div>
+              <h3>Employee Management System</h3>
+              <p>
+                A small application demonstrating employee record management and browser-based
+                data persistence.
+              </p>
+              <div class="tag-list">
+                <span>HTML</span><span>CSS</span><span>JavaScript</span><span>localStorage</span>
+              </div>
+              <a class="project-link" href="https://github.com/mhummadhamza321-commits/employee-management-system"
+                target="_blank" rel="noopener noreferrer">View source repository ↗</a>
+            </div>
           </article>
         </div>
-        <p class="project-note">Before publishing, verify each repository link and update descriptions to match the features you have actually implemented.</p>
+      </div>
+    </section>
+    <!-- DATHEON INTERNSHIP PROJECTS -->
+    <section class="section container" id="datheon-internship">
+      <p class="eyebrow">INTERNSHIP EXPERIENCE</p>
+      <h2 class="section-title">Datheon Internship Projects</h2>
+      <p class="section-subtitle">
+        Four completed development assignments demonstrating practical skills in
+        responsive web design, JavaScript, API integration, and application development.
+      </p>
+
+      <div class="project-grid">
+
+        <!-- TASK 1 -->
+        <article class="project-card">
+          <img src="assets/datheon-task-1.png" alt="Datheon Task 1 personal portfolio website preview"
+            class="project-image" loading="lazy" decoding="async" width="640" height="360" />
+          <div class="project-content">
+            <div class="project-meta">
+              <span class="project-type">Datheon · Task 1</span>
+              <span class="project-status">Completed</span>
+            </div>
+            <h3>💻 Personal Developer Portfolio</h3>
+            <p>
+              A responsive portfolio website presenting developer skills,
+              projects, professional links, and contact information.
+            </p>
+            <div class="tag-list">
+              <span>HTML5</span><span>CSS3</span><span>JavaScript</span>
+              <span>Responsive Design</span>
+            </div>
+            <a class="project-link"
+              href="https://github.com/mhummadhamza321-commits/Datheon_Full_Stack_Web_Development_Internship/tree/main/Task-1"
+              target="_blank" rel="noopener noreferrer">
+              View source code ↗
+            </a>
+          </div>
+        </article>
+
+        <!-- TASK 2 -->
+        <article class="project-card">
+          <img src="assets/datheon-task-2.png" alt="TaskFlow productivity tracker preview" class="project-image"
+            loading="lazy" decoding="async" width="640" height="360" />
+          <div class="project-content">
+            <div class="project-meta">
+              <span class="project-type">Datheon · Task 2</span>
+              <span class="project-status">Completed</span>
+            </div>
+            <h3>📝 Dynamic Task Manager & Productivity Tracker</h3>
+            <p>
+              A task management application featuring task creation,
+              editing, deletion, filtering, search, and browser-based data persistence.
+            </p>
+            <div class="tag-list">
+              <span>HTML5</span><span>CSS3</span><span>JavaScript</span>
+              <span>CRUD</span><span>localStorage</span>
+            </div>
+            <a class="project-link"
+              href="https://github.com/mhummadhamza321-commits/Datheon_Full_Stack_Web_Development_Internship/tree/main/Task-2"
+              target="_blank" rel="noopener noreferrer">
+              View source code ↗
+            </a>
+          </div>
+        </article>
+
+        <!-- TASK 3 -->
+        <article class="project-card">
+          <img src="assets/datheon-task-3.png" alt="Datheon Task 3 application preview" class="project-image"
+            loading="lazy" decoding="async" width="640" height="360" />
+          <div class="project-content">
+            <div class="project-meta">
+              <span class="project-type">Datheon · Task 3</span>
+              <span class="project-status">Completed</span>
+            </div>
+            <h3>⛅ Real-Time Weather Forecast & Climate Telemetry App</h3>
+            <p>
+              A web application demonstrating API integration, dynamic data
+              handling, and interactive user interface functionality.
+            </p>
+            <div class="tag-list">
+              <span>HTML</span><span>CSS</span><span>JavaScript</span>
+              <span>REST API</span>
+            </div>
+            <a class="project-link"
+              href="https://github.com/mhummadhamza321-commits/Datheon_Full_Stack_Web_Development_Internship/tree/main/Task-3"
+              target="_blank" rel="noopener noreferrer">
+              View source code ↗
+            </a>
+          </div>
+        </article>
+
+        <!-- TASK 4 -->
+        <article class="project-card">
+          <img src="assets/datheon-task-4.png" alt="Datheon Task 4 e-commerce shopping cart preview"
+            class="project-image" loading="lazy" decoding="async" width="640" height="360" />
+          <div class="project-content">
+            <div class="project-meta">
+              <span class="project-type">Datheon · Task 4</span>
+              <span class="project-status">Completed</span>
+            </div>
+            <h3>🛒 E-Commerce Product Catalog & Interactive Shopping Cart</h3>
+            <p>
+              A product browsing and shopping cart application demonstrating
+              product data retrieval, cart interactions, and dynamic UI updates.
+            </p>
+            <div class="tag-list">
+              <span>JavaScript</span><span>API</span><span>DOM</span>
+              <span>E-commerce</span>
+            </div>
+            <a class="project-link"
+              href="https://github.com/mhummadhamza321-commits/Datheon_Full_Stack_Web_Development_Internship/tree/main/Task-4"
+              target="_blank" rel="noopener noreferrer">
+              View source code ↗
+            </a>
+          </div>
+        </article>
+
       </div>
     </section>
 
+
+    <!-- CERTIFICATIONS -->
+    <section class="section section-muted" id="certifications">
+      <div class="container">
+        <p class="eyebrow">PROFESSIONAL DEVELOPMENT</p>
+        <h2 class="section-title">Certifications</h2>
+        <p class="section-subtitle">
+          Training and certifications supporting my web development journey.
+        </p>
+
+        <div class="project-grid">
+          <article class="project-card">
+            <div class="project-content">
+              <div class="project-meta">
+                <span class="project-type">Technical Training</span>
+                <span class="project-status">Completed</span>
+              </div>
+
+              <h3>Full Stack JavaScript Development</h3>
+
+              <p>
+                Completed Full Stack JavaScript development training through
+                the NAVTTC program, building foundational skills relevant to
+                modern web development.
+              </p>
+
+              <div class="tag-list">
+                <span>JavaScript</span>
+                <span>Frontend Development</span>
+                <span>Full Stack</span>
+              </div>
+
+              <!-- Add this link after placing your certificate PDF in assets -->
+              <a class="project-link" href="assets/NAVTTC-Full-Stack-JavaScript-Certificate.pdf" target="_blank"
+                rel="noopener noreferrer">
+                View Certificate ↗
+              </a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- RESUME -->
     <section class="section container resume-section" id="resume">
-      <div><p class="eyebrow">CAREER & EXPERIENCE</p><h2 class="section-title">Want to know more?</h2><p class="section-subtitle">Add your latest PDF CV to this project to let recruiters download it directly.</p></div>
+      <div>
+        <p class="eyebrow">CAREER &amp; EXPERIENCE</p>
+        <h2 class="section-title">Want to know more?</h2>
+        <p class="section-subtitle">Download my CV for a full overview of my education and projects.</p>
+      </div>
       <a class="button button-secondary" href="assets/Muhammad-Hamza-CV.pdf" download>Download my CV ↓</a>
     </section>
 
+    <!-- CONTACT -->
     <section class="section contact-section" id="contact">
       <div class="container contact-inner">
         <p class="eyebrow">LET'S CONNECT</p>
         <h2 class="section-title">Have a project or opportunity?</h2>
-        <p class="section-lead">I'm interested in junior developer roles, internships, and opportunities to build useful web applications.</p>
-        <a class="button button-primary" href="mailto:mhummadhamza321@gmail.com?subject=Developer%20Opportunity">Email me <span aria-hidden="true">↗</span></a>
-        <div class="contact-links"><a href="https://github.com/mhummadhamza321-commits" target="_blank" rel="noreferrer">GitHub</a><a href="https://www.linkedin.com/in/muhmmad-hamza-094639335" target="_blank" rel="noreferrer">LinkedIn</a><a href="mailto:mhummadhamza321@gmail.com">Email</a></div>
+        <p class="section-lead">
+          I'm interested in junior developer roles, internships, and opportunities to build
+          useful web applications.
+        </p>
+        <a class="button button-primary" href="mailto:mhummadhamza321@gmail.com?subject=Developer%20Opportunity">
+          Email me <span aria-hidden="true">↗</span>
+        </a>
+        <nav class="contact-links" aria-label="Contact links">
+          <a href="https://github.com/mhummadhamza321-commits" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <a href="https://www.linkedin.com/in/muhmmad-hamza-094639335" target="_blank"
+            rel="noopener noreferrer">LinkedIn</a>
+          <a href="mailto:mhummadhamza321@gmail.com">Email</a>
+        </nav>
       </div>
     </section>
+
   </main>
-  <footer class="site-footer"><div class="container footer-inner"><a class="brand" href="#home"><span class="brand-mark">H</span><span>Hamza<span class="accent">.</span></span></a><p>Designed & built by Muhammad Hamza · <span id="year"></span></p><a href="#home">Back to top ↑</a></div></footer>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <a class="brand" href="#home">
+        <span class="brand-mark" aria-hidden="true">MH</span>
+        <span>Muhammad Hamza</span>
+      </a>
+      <p>Designed &amp; built by Muhammad Hamza · <span id="year">2026</span></p>
+      <a href="#home">Back to top ↑</a>
+    </div>
+  </footer>
 </body>
+
 </html>
